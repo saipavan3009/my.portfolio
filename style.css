@@ -1,0 +1,336 @@
+:root{
+    --purple:#2F192E;
+    --purple-light:#30192d;
+    --dark-blue:#012677;
+    --blue:#5c65c0;
+    --skyblue :#00b4fc;
+    --light-blue:#005bc5;
+    --dark-pink:#f64c57;
+    --dark-magenta:#e21b5a;
+    --light-green:#61e2c2;
+    --white:#ffffff;
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+}
+body{
+    background: linear-gradient(45deg, var(--purple),var(--purple-light));
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Ensures top-to-bottom flow */
+    align-items: center;    /* Centers content horizontally */
+    gap: 20px;              /* Adds spacing between sections */
+    padding: 20px;
+}
+.profile-card{
+    background: #111;
+    width:900px;
+    padding: 3rem;
+    border-radius: 10px;
+    min-height: 400px;
+    position: relative;
+    color:#fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-card .profile-pic{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.profile-card .profile-pic img{
+    border-radius: 10px;
+}
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+}
+.profile-details .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-details .intro h2{
+    margin-top: 20px;
+}
+.profile-details .intro h4{
+    background: #1d1d1d;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px;
+}
+.profile-details .intro .social{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.profile-details .intro .social i{
+    color:#ddd;
+    font-size: 16px;
+    background-color:#222;
+    margin: 5px;
+    height: 35px;
+    width:35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.profile-details .intro .social i:hover{
+    transform: scale(1.2);
+    border:1px solid rgba(255,255,255,0.3);
+}
+.profile-details .contact-info{
+    background-color: #1d1d1d;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+.profile-details .contact-info .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.contact-info .row .icon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #111;
+    text-align: center;
+    color:#fff;
+    transition: 0.5s;
+}
+.row .icon:hover{
+    transform:scale(1.2);
+    border:1px solid rgba(255,255,255,0.1);
+}
+.row .content{
+    min-width: 70%;
+}
+.row .content span{
+    font-size: 12px;
+}
+/*****about section ****/
+/* Importing stylish Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+.about {
+    min-height: 700px;
+    background: linear-gradient(135deg, #000000, #222222); /* Background gradient */
+    max-width: 900px;
+    padding: 60px 40px; /* Increased padding for better spacing */
+    border-radius: 20px; /* More rounded corners */
+    margin: 40px auto;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    position: relative;
+    overflow: hidden; /* Prevents elements from going out of bounds */
+    font-family: 'Poppins', sans-serif; /* Primary font */
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background-pattern.svg') no-repeat center center; /* Subtle pattern overlay */
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.about h1 {
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 700; /* Bold font for strong presence */
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 3px; /* Increased letter-spacing for dramatic effect */
+    font-family: 'Playfair Display', serif; /* Elegant serif font for heading */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for text depth */
+}
+
+.about h1::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(45deg, #f64c57, #e21b5a); /* Gradients underlining */
+}
+
+.about h2 {
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif; /* Sans-serif for sub-headings */
+    border-bottom: 2px solid #f64c57; /* Added underline for section titles */
+    padding-bottom: 8px;
+}
+
+.about p {
+    color: #ddd;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif; /* Using Poppins for body text */
+    text-align: justify; /* Better alignment for paragraphs */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for paragraph text */
+}
+
+.about ul {
+    color: #ddd;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about ul li {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    color: #ddd;
+    margin-top: 3rem;
+}
+
+.work .workbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid #a19f9f;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(51, 51, 51, 0.8), rgba(70, 70, 70, 0.8));
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.work .workbox:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.work .workbox .desc {
+    width: 100%;
+    color: #f2f2f2;
+}
+
+.work .workbox .desc h3 {
+    color: #f64c57;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif; /* Elegant serif for work descriptions */
+}
+
+.work .workbox .desc p {
+    color: #ddd;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.work .workbox .desc p::before {
+    content: "•"; /* Bullet before each description */
+    color: #f64c57;
+    margin-right: 8px;
+}
+
+.work .workbox .desc p:hover {
+    color: #f64c57; /* Highlight description text on hover */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .work {
+        grid-template-columns: 1fr; /* Stacking work items on smaller screens */
+    }
+
+    .about {
+        padding: 40px 20px; /* Reduced padding on smaller screens */
+    }
+
+    .about h1 {
+        font-size: 2.8rem; /* Smaller font size on smaller screens */
+    }
+
+    .about h2 {
+        font-size: 1.8rem; /* Slightly smaller subheadings */
+    }
+}
+
+/***Responsive Design ***/
+@media(max-width:768px)
+{
+.about{
+    width: 1005;
+    max-width: 400px;
+    padding:1rem;
+    margin:1rem;
+
+    }
+.about h1{
+    font-size: 2.2rem;
+    }
+    .about .work{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,auto);
+    }
+}
+:root {
+    --dark-magenta: #8b008b; /* Customize the magenta color */
+  }
+
+  .demo-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--dark-magenta);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+
+  .demo-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  
+  
